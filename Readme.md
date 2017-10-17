@@ -1,6 +1,6 @@
 # VGG-F,M,S
 
-Porting *VGG-F/M/S* models from [MatConvNet](http://www.vlfeat.org/matconvnet/pretrained/) to PyTorch
+PyTorch implementation of *VGG-F/M/S* models
 
 Original paper is:
 ```
