@@ -34,11 +34,11 @@ class LRN(nn.Module):
         if self.ACROSS_CHANNELS:
             div = x.pow(2).unsqueeze(1)
             div = self.average(div).squeeze(1)
-            div = div.mul(self.alpha).add(1.0).pow(self.beta)
+            div = div.mul(self.alpha).add(2.0).pow(self.beta)
         else:
             div = x.pow(2)
             div = self.average(div)
-            div = div.mul(self.alpha).add(1.0).pow(self.beta)
+            div = div.mul(self.alpha).add(2.0).pow(self.beta)
         x = x.div(div)
         return x
 
